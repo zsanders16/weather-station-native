@@ -12,13 +12,16 @@ import {
   View
 } from 'react-native';
 import Homepage from './app/components/Homepage'
+import { NativeRouter, Route, Link } from 'react-router-native'
+import WeatherStation from './app/components/WeatherStation'
 
 export default class weatherStationNative extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Homepage />
-      </View>
+      <NavtiveRouter>
+          <Route path='/' render={ () => (<Homepage />) } />
+          <Route exact path='/weatherStation' render={ () => (<WeatherStation />) } />
+      </NavtiveRouter>
     );
   }
 }
