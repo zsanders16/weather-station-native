@@ -12,16 +12,22 @@ import {
   View
 } from 'react-native';
 import Homepage from './app/components/Homepage'
-import { NativeRouter, Route, Link } from 'react-router-native'
 import WeatherStation from './app/components/WeatherStation'
+import store from './store';
+import { NativeRouter, Route, Link, Switch } from 'react-router-native'
+import { Provider } from 'react-redux';
 
 export default class weatherStationNative extends Component {
   render() {
     return (
-      <NavtiveRouter>
-          <Route path='/' render={ () => (<Homepage />) } />
-          <Route exact path='/weatherStation' render={ () => (<WeatherStation />) } />
-      </NavtiveRouter>
+      <Provider store={store}>
+        <NativeRouter>
+          <Switch>
+            <Route path='/' render={ () => (<Homepage />) } />
+            <Route exact path='/weatherStation' render={ () => (<WeatherStation />) } />
+            </Switch>
+        </NativeRouter>
+      </Provider>
     );
   }
 }

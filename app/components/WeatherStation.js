@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Container, Grid, Button, Divider, Segment, Checkbox, Label } from 'semantic-ui-react';
-import Compare from './Compare';
-import SavedLocations from './SavedLocations'
-import SensorActual from './SensorActual'
-import CurrentLocation from './CurrentLocation'
-import WeeklyForecast from './WeeklyForecast'
-import { setCurrentLocation } from '../actions/locations'
-import TodaysWeather from './TodaysWeather'
-import ToggleFavoriteLocation  from './ToggleFavoriteLocation'
-import ForecastChart from './ForecastChart'
-import { weatherForecastWeekly, setCityView, updateCurrentLoctions } from '../actions/weatherForecasts'
+// import { Container, Grid, Button, Divider, Segment, Checkbox, Label } from 'semantic-ui-react';
+// import Compare from './Compare';
+// import SavedLocations from './SavedLocations'
+// import SensorActual from './SensorActual'
+// import CurrentLocation from './CurrentLocation'
+// import WeeklyForecast from './WeeklyForecast'
+// import { setCurrentLocation } from '../actions/locations'
+// import TodaysWeather from './TodaysWeather'
+// import ToggleFavoriteLocation  from './ToggleFavoriteLocation'
+// import ForecastChart from './ForecastChart'
+// import { weatherForecastWeekly, setCityView, updateCurrentLoctions } from '../actions/weatherForecasts'
 
 
 
